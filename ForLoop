@@ -1,0 +1,49 @@
+/*
+caSequence
+Haeun Oh
+25/03/2019
+
+ */
+package causingforloops5;
+
+public class CaUsingForLoops5 {
+
+    public static void main(String[] args) {
+        int intCount5; 
+       
+        /*
+        for (intCount5 =1; intCount5 <= 10; intCount5++);
+        {
+        System.out.println(intCount5);   //if you declare a variable within you can only use it within the loop after that y=it technically "disappears"
+        }
+        System.out.println(intCount5);
+        */
+        
+        int intCount6;
+        
+       /* for (intCount6 =1; intCount6 <= 10; intCount6++);
+        {
+            System.out.println(intCount6);   
+        }
+        System.out.println("This is now outside the loop" + intCount6);
+        
+        //dblAvg + dblSum / intNumberStudents
+        */
+    
+       int intCount7;
+         for (intCount7 =1; intCount7 <= 20; intCount7++)   
+// Don't add a semmi colon because it will "close your loop" without showwing an error(Page184) making everything that follows run independantly
+        {
+            if (intCount7 < 10)                     //in order to kick you out you must use a number that is out of range with the use of if... else statements 
+                System.out.println(intCount7);
+            else
+               // intCount7 = 21;
+               break;   //this can also be used to kick you out the loop instead of using a number
+        }
+        
+        System.out.println("Outside the loop" + intCount7);
+
+       
+    }
+    
+}
